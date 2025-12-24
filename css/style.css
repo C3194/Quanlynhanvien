@@ -1,0 +1,170 @@
+﻿/* css/style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.boxcenter {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.headeradmin {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.headeradmin h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+/* Menu */
+.menu {
+  background-color: #000;
+  margin-bottom: 30px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  background: #000;
+}
+
+.menu ul li {
+  flex: 1;
+  text-align: center;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 14px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  background-color: #444;
+}
+
+/* Tiêu đề form */
+.frititle {
+  margin-bottom: 20px;
+}
+
+.frititle h1 {
+  font-size: 24px;
+  color: #333;
+  border-bottom: 2px solid #000;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+/* Form content */
+.frmcontent {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.row.mb10 {
+  margin-bottom: 15px;
+}
+
+.row.mb10 label,
+.row.mb10>span {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.row.mb10 input[type="text"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.row.mb10 input[type="text"][disabled] {
+  background-color: #f0f0f0;
+  color: #777;
+  cursor: not-allowed;
+}
+
+/* Buttons */
+.row.mb10 input[type="submit"],
+.row.mb10 input[type="reset"],
+.row.mb10 input[type="button"],
+a input[type="button"] {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+input[type="submit"] {
+  background-color: #0066cc;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #0052a3;
+}
+
+input[type="reset"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+input[type="reset"]:hover {
+  background-color: #c82333;
+}
+
+input[type="button"],
+a input[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+input[type="button"]:hover,
+a input[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu ul li a {
+    padding: 16px;
+  }
+
+  .frmcontent {
+    padding: 20px;
+  }
+}
